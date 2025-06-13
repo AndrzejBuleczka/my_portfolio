@@ -16,6 +16,7 @@
   --h3: calc(var(--h4) * var(--scale));
   --h2: calc(var(--h3) * var(--scale));
   --h1: calc(var(--h2) * var(--scale));
+  --small: calc(var(--base-size) / var(--scale));
 }
 
 body {
