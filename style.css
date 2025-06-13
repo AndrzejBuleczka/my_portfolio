@@ -72,6 +72,36 @@ figure {
   padding: 0;
 }
 
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav {
+  font-family: var(--heading);
+  font-weight: 600;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+}
+
+nav a,
+h1 a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
