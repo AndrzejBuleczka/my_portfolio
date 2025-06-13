@@ -7,6 +7,37 @@
   --red: #ff4404;
 }
 
+.colors {
+  display: flex;
+  gap: 20px;
+}
+
+.colors > * {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--black);
+}
+
+
+.white {
+  background-color: var(--white);
+}
+.black {
+  background-color: var(--black);
+}
+.tan {
+  background-color: var(--tan);
+}
+.green {
+  background-color: var(--green);
+}
+.lightgreen {
+  background-color: var(--lightgreen);
+}
+.red {
+  background-color: var(--red);
+}
+
 /* border box model: https://css-tricks.com/box-sizing/ */
 html {
   box-sizing: border-box;
