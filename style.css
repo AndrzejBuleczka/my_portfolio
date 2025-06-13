@@ -1,0 +1,29 @@
+:root {
+  --black: #000501;
+  --white: #ffffff;
+  --tan: #b6b57b;
+  --green: #31b28a;
+  --lightgreen: #8cdfc5;
+  --red: #ff4404;
+}
+
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* h/t Scott O'Hara https://css-tricks.com/inclusively-hidden/ */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
