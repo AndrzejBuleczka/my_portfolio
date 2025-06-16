@@ -337,3 +337,23 @@
     }
   }
 }
+@layer footer {
+  footer {
+    text-align: center;
+    background-image: url("https://assets.codepen.io/296057/fem-stars.jpg");
+    color: var(--white);
+  }
+
+  footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  footer svg {
+    width: 30px;
+    fill: var(--white);
+    margin-right: 0.5rem;
+  }
+}
