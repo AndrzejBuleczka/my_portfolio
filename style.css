@@ -338,10 +338,12 @@
   }
 }
 @layer footer {
-   footer {
+  footer {
     text-align: center;
     padding: 6rem 0;
-    background: var(--black) url("https://assets.codepen.io/296057/fem-stars.jpg") no-repeat center center;
+    background: var(--black)
+      url("https://assets.codepen.io/296057/fem-stars.jpg") no-repeat center
+      center;
     background-size: cover;
     color: var(--white);
   }
@@ -362,5 +364,51 @@
   }
   footer a:hover svg {
     fill: var(--green);
+  }
+}
+
+@layer projects {
+  .section-projects {
+    background-color: var(--black);
+    padding: 6rem 0 4rem 0;
+    color: var(--white);
+  }
+
+  figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  figure a {
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  figure a:hover {
+    color: var(--green);
+  }
+
+  figcaption {
+    background-color: var(--black);
+    opacity: 0.8;
+    text-align: center;
+  }
+
+  figcaption h3 {
+    margin-bottom: 0;
+  }
+
+  figcaption ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    font-family: var(--mono);
+    text-transform: uppercase;
+    font-size: var(--small);
+  }
+
+  figcaption li {
+    display: inline-block;
   }
 }
