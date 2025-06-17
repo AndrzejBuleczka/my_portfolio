@@ -166,6 +166,18 @@
   .name {
     font-weight: 700;
   }
+
+  .stars {
+    padding: 4rem 0 6rem 0;
+    background-image: url("../img/fem-featured-top.png"),
+      url("../img/fem-stars-sky.jpg");
+    background-repeat: repeat-x, no-repeat;
+    background-position: bottom center, top center;
+  }
+
+  header + article {
+    max-width: 500px;
+  }
 }
 @layer header {
   header {
@@ -322,6 +334,13 @@
     padding: 6rem 0;
   }
 
+  .project {
+    background-image: url("../img/fem-feature-bkgd.png");
+    background-repeat: repeat;
+    background-position: center center;
+    padding: 6rem 0;
+  }
+
   .section-featured h2 {
     font-size: var(--h3);
   }
@@ -370,6 +389,13 @@
     padding: 0.5rem;
     border: 2px solid var(--red);
   }
+
+  .youtube {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
   @media (max-width: 475px) {
     .section-featured h2 {
       font-size: var(--h4);
@@ -454,6 +480,65 @@
     gap: 2rem;
     margin: 2rem 0;
   }
+
+  .project figure {
+    display: block;
+  }
+
+  .project figcaption {
+    background-color: transparent;
+    color: var(--black);
+    text-align: left;
+  }
+
+  figure.featured-screenshots {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+  }
+
+  .section-featured .featured-screenshots img {
+    grid-column: revert;
+    grid-row: revert;
+  }
+
+  .featured-screenshots figcaption {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+
+  .featured-screenshots figcaption p {
+    columns: 2;
+    margin-bottom: 5rem;
+  }
+
+  .feature-image {
+    display: block;
+    margin: 5rem 0;
+  }
+
+  figure.figure-portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem 0;
+  }
+
+  .figure-portfolio img {
+    margin-top: 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .figure-portfolio figcaption {
+    margin-top: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
   @media (max-width: 992px) {
     .topgrid {
       display: block;
@@ -531,5 +616,17 @@
   }
   footer a:hover svg {
     fill: var(--green);
+  }
+
+  .project + footer {
+    padding-top: 0;
+  }
+
+  .bottom-trim {
+    background-image: url("../img/fem-featured-bottom.png");
+    background-repeat: repeat-x;
+    background-position: top center;
+    height: 16px;
+    padding-bottom: 4rem;
   }
 }
